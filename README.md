@@ -1,9 +1,11 @@
 # CodAlfred
-=======================
+
 [![Current Version](https://img.shields.io/github/release/danielstieber/codalfred.svg?style=flat-square)](https://github.com/danielstieber/codalfred/releases)
 
 CodAlfred is a workflow for [Alfred](https://www.alfredapp.com/) that 
 allows you to open and create Coda docs.
+
+![Demo](demo.gif)
 
 ## Installation
 1. [Download the workflow](https://github.com/danielstieber/codalfred/releases/download/v0.0.1/CodAlfred.alfredworkflow)
