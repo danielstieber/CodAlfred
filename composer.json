@@ -1,0 +1,23 @@
+{
+    "name": "danielstieber/cod-alfred",
+    "description": "CodAlfred is a workflow to open Coda Docs directly from Alfed.",
+    "keywords": ["alfred", "coda", "workflow"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Stieber",
+            "email": "daniel.w.stieber@gmail.com",
+            "homepage": "https://www.danielstieber.com"
+        }
+    ],
+    "require": {
+        "danielstieber/coda-php": ">=0.0.3",
+        "joetannenbaum/alfred-workflow": "^0.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "danielstieber\\CodAlfred\\": "src"
+        }
+    }
+}
