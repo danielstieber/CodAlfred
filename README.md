@@ -8,7 +8,7 @@ allows you to open and create Coda docs.
 ![Demo](demo.gif)
 
 ## Installation
-1. [Download the workflow](https://github.com/danielstieber/codalfred/releases/download/v0.0.1/CodAlfred.alfredworkflow)
+1. [Download the workflow](https://github.com/danielstieber/codalfred/releases/download/v0.0.2/CodAlfred.alfredworkflow)
 2. Double click the file that you just downloaded
 3. Insert your Coda API Token in the 'apikey' values field ([How to find your API Key](#faq))
 4. Complete the installation dialog
