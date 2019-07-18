@@ -8,6 +8,32 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>5A3C04EE-23D8-4E0E-8262-35A91A94975B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7C0CF7D1-E0EE-4B58-9113-E5B691E24782</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>73295DDD-20DE-4793-B2E8-1EF838B229D7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0774359C-365F-4DFF-B6C7-1F2AD5DD732E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8D3776F9-A62C-480A-8D6F-70F4D167416A</key>
 		<array>
 			<dict>
@@ -34,6 +60,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>CF2BD6C9-2B34-45E6-8D2A-A1C0C34A70AF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>572097C0-9BF6-49E9-95E0-1AE19A998A27</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Daniel Stieber</string>
@@ -45,25 +84,6 @@
 	<string>CodAlfred</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string></string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>6646A14D-F270-4F1D-AF4D-2FE41FCBD7CE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -119,6 +139,44 @@ echo $coda-&gt;find($query);</string>
 			<string>8D3776F9-A62C-480A-8D6F-70F4D167416A</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>6646A14D-F270-4F1D-AF4D-2FE41FCBD7CE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>794DF3F2-78A4-4CB6-AC3B-A7CC3F3D1342</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -179,19 +237,120 @@ echo $coda-&gt;create($query);</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>cda</string>
+				<key>subtext</key>
+				<string>Opens you Coda doc list</string>
+				<key>text</key>
+				<string>All docs</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5A3C04EE-23D8-4E0E-8262-35A91A94975B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string></string>
+				<string>https://coda.io/docs</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>794DF3F2-78A4-4CB6-AC3B-A7CC3F3D1342</string>
+			<string>7C0CF7D1-E0EE-4B58-9113-E5B691E24782</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://coda.io/formulas</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>0774359C-365F-4DFF-B6C7-1F2AD5DD732E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>cdf</string>
+				<key>subtext</key>
+				<string>Opens the Coda formula list</string>
+				<key>text</key>
+				<string>Formula list</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>73295DDD-20DE-4793-B2E8-1EF838B229D7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>cdc</string>
+				<key>subtext</key>
+				<string>Opens the Coda community forum</string>
+				<key>text</key>
+				<string>Coda Community</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>CF2BD6C9-2B34-45E6-8D2A-A1C0C34A70AF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://community.coda.io/</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>572097C0-9BF6-49E9-95E0-1AE19A998A27</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -205,33 +364,75 @@ Input 'cd todo' to search your doclist for the keyword 'todo'
 Input 'cdn todolist' to create a new doc with the name 'todolist'</string>
 	<key>uidata</key>
 	<dict>
+		<key>0774359C-365F-4DFF-B6C7-1F2AD5DD732E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>375</integer>
+			<key>ypos</key>
+			<integer>425</integer>
+		</dict>
+		<key>572097C0-9BF6-49E9-95E0-1AE19A998A27</key>
+		<dict>
+			<key>xpos</key>
+			<integer>375</integer>
+			<key>ypos</key>
+			<integer>555</integer>
+		</dict>
+		<key>5A3C04EE-23D8-4E0E-8262-35A91A94975B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>155</integer>
+			<key>ypos</key>
+			<integer>295</integer>
+		</dict>
 		<key>6646A14D-F270-4F1D-AF4D-2FE41FCBD7CE</key>
 		<dict>
 			<key>xpos</key>
 			<integer>365</integer>
 			<key>ypos</key>
-			<integer>110</integer>
+			<integer>20</integer>
+		</dict>
+		<key>73295DDD-20DE-4793-B2E8-1EF838B229D7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>150</integer>
+			<key>ypos</key>
+			<integer>425</integer>
 		</dict>
 		<key>794DF3F2-78A4-4CB6-AC3B-A7CC3F3D1342</key>
 		<dict>
 			<key>xpos</key>
 			<integer>365</integer>
 			<key>ypos</key>
-			<integer>265</integer>
+			<integer>165</integer>
+		</dict>
+		<key>7C0CF7D1-E0EE-4B58-9113-E5B691E24782</key>
+		<dict>
+			<key>xpos</key>
+			<integer>370</integer>
+			<key>ypos</key>
+			<integer>295</integer>
 		</dict>
 		<key>8D3776F9-A62C-480A-8D6F-70F4D167416A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>155</integer>
+			<integer>150</integer>
 			<key>ypos</key>
-			<integer>115</integer>
+			<integer>20</integer>
 		</dict>
 		<key>A00C4A9E-000C-4FFD-90BD-F63C3D9746CA</key>
 		<dict>
 			<key>xpos</key>
 			<integer>150</integer>
 			<key>ypos</key>
-			<integer>265</integer>
+			<integer>165</integer>
+		</dict>
+		<key>CF2BD6C9-2B34-45E6-8D2A-A1C0C34A70AF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>150</integer>
+			<key>ypos</key>
+			<integer>555</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -244,7 +445,7 @@ Input 'cdn todolist' to create a new doc with the name 'todolist'</string>
 		<string>apikey</string>
 	</array>
 	<key>version</key>
-	<string>0.0.1</string>
+	<string>0.0.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/danielstieber/CodAlfred</string>
 </dict>

@@ -42,24 +42,33 @@ class CodAlfred
 	 */
 	public function find($query)
 	{
-		if(empty(trim($query))) {
-			$result = $this->coda->listDocs();
+		$now = time();
+		if(empty(trim($query))) { // if no arg is given
+			$result = $this->coda->listDocs(); // get all docs
+			$this->workflow->result() // adds option to open coda in browser
+				->uid('1') // lowest ID, so it is ranked first
+				->title('Open Coda in your Browser')
+				->autocomplete('Open Coda in your Browser')
+				->subtitle($subtitle)
+				->arg('https://coda.io/docs')
+				->quicklookurl('https://coda.io/docs')
+				->valid(true);
 		} else {
 			$result = $this->coda->listDocs(['query' => $query]);
 		}
-
 		foreach ($result['items'] as $doc) {
 			$updated = strtotime($doc['updatedAt']);
 			$subtitle = 'Last modified: '.date('d.m.Y h:m', $updated);
 			$this->workflow->result()
-			->uid($doc['id'])
-			->title($doc['name'])
-			->autocomplete($doc['name'])
-			->subtitle($subtitle)
-			->arg($doc['browserLink'])
-			->quicklookurl($doc['browserLink'])
-			->valid(true);
+				->uid($now - $updated) // id is current timestamp - doc timestamp
+				->title($doc['name'])
+				->autocomplete($doc['name'])
+				->subtitle($subtitle)
+				->arg($doc['browserLink'])
+				->quicklookurl($doc['browserLink'])
+				->valid(true);
 		}
+		$this->workflow->sortResults('asc', 'uid'); // ranks docs with latest update first
         return $this->workflow->output();
 	}
 
