@@ -5,6 +5,8 @@
 CodAlfred is a workflow for [Alfred](https://www.alfredapp.com/) that 
 allows you to open and create Coda docs.
 
+→ [**Get 10$ discount on Coda paid plans when signing up with this link**](https://coda.io/?r=Qjx7OzpmTa2L6IPfkY-anw)
+
 ![Demo](demo.gif)
 
 ## Installation
