@@ -52,6 +52,9 @@ There are some basic commands to quickly open Coda related pages:
 Open your [Coda Account Settings](https://coda.io/account) and scroll down to *Coda API Tokens*. Use your existing token or generate a new one. A token should look something like this: 12345678-12a3-1a2b-123a-1234567890
 
 ## Changelog
+### 0.0.3 (September 21, 2020)
+* Updated to latest CodaPHP version
+_Older versions are no longer supported_
 ### 0.0.2 (July 18, 2019)
 * Fixed a bug, where Docs where not ranked properly
 * Added cda, cdf & cdc commands
