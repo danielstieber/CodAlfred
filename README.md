@@ -1,3 +1,7 @@
+# DEPRECATED
+This Rep is no longer maintained since PHP is no longer installed by default in new Mac OS versions.
+Check out [CodaAlfredJS](https://github.com/brianseidman/codaalfredJS) for a working Alfred Workflow for Coda!
+
 # CodAlfred
 
 [![Current Version](https://img.shields.io/github/release/danielstieber/codalfred.svg?style=flat-square)](https://github.com/danielstieber/codalfred/releases)
